@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#4b2e83">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Someone Special-ish</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#4b2e83">
 </head>
 <body>
 
-<div id="poop-container">💩</div>
+  <div id="poop-container">💩</div>
 
-<header>
+  <header>
     <h1 id="main-title">Hello, You!</h1>
     <p class="reveal">A digital warm blanket, built for you.</p>
     <div class="scroll-hint reveal">SCROLL SLOWLY</div>
-</header>
+  </header>
 
-<div class="section">
+  <div class="section">
     <h2>The Soundtrack</h2>
-    <p class="witty-note">"I heard you shared 'The Night We Met' once. Perfect for when you lie in bed and stare at the ceiling"</p>
+    <p class="witty-note">"I heard you shared 'The Night We Met' once. Perfect for when you lie in bed and stare at
+      the ceiling"</p>
     <div class="video-container">
-        <iframe
-            src="https://www.youtube.com/embed/AKnC-W-JPJk?rel=0&modestbranding=1&autoplay=0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
+      <iframe src="https://www.youtube.com/embed/AKnC-W-JPJk?rel=0&modestbranding=1&autoplay=0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy">
+      </iframe>
     </div>
-</div>
+  </div>
 
-<div class="section">
+  <div class="section">
     <h2>A Birthday Joke?</h2>
     <div class="joke-box">
-        <p id="joke-text" style="opacity: 0.8;">Click the button for a masterpiece of dry humor.</p>
-        <p id="joke-punchline" style="font-weight: 500; margin-top: 15px; color: var(--warm-gold); font-size: 1.1rem;"></p>
-        <button class="btn-premium" onclick="nextJoke()">Mhm...</button>
+      <p id="joke-text" style="opacity: 0.8;">Click the button for a masterpiece of dry humor.</p>
+      <p id="joke-punchline" style="font-weight: 500; margin-top: 15px; color: var(--warm-gold); font-size: 1.1rem;">
+      </p>
+      <button class="btn-premium" onclick="nextJoke()">Mhm...</button>
     </div>
-</div>
+  </div>
 
-<!-- Personal Note Section -->
-<div class="section">
+  <!-- Personal Note Section -->
+  <div class="section">
     <h2>A Personal Note</h2>
     <div id="lock-container">
-        <p>Enter your 4-digit birth year to unlock:</p>
-        <input type="password" id="passcode" maxlength="4" placeholder="0000">
-        <br>
-        <button class="btn-premium" onclick="checkPasscode()">Unlock</button>
+      <p>Enter your 4-digit birth year to unlock:</p>
+      <input type="password" id="passcode" maxlength="4" placeholder="0000">
+      <br>
+      <button class="btn-premium" onclick="checkPasscode()">Unlock</button>
     </div>
     <div id="secret-content">
-        <span style="font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-purple); opacity: 0.7; display: block; margin-bottom: 10px;">Digital Time Capsule // Est. Secondary School</span>
-        <div class="witty-note" style="border-left: 2px solid var(--warm-gold); color: var(--text-color); font-style: normal;">
-            <strong>To the best thing to come out of 2008:</strong><br><br>
-            I know it’s been over a year since we actually ran into each other, but I figured I’d put this together anyway.
-            <br><br>
-            Thinking back to secondary school, those days felt so much simpler, didn't they? Even though we’ve both graduated and gone our separate ways for now, I still find myself laughing at the weird jokes and the specific brand of chaos we survived back then. You were a huge part of what made those years bearable.
-            <br><br>
-            It’s wild how much time has passed, but I wanted you to know that even from a distance, I’m still rooting for you. Congrats on hitting this milestone. You’re officially "Version 18.0"—the same person I knew in the hallways, just with a lot more freedom.
-            <br><br>
-            Stay exactly as you are. We’re overdue for a catch-up.
-            <br><br>
-            <strong>— Paul</strong>
-        </div>
+      <span
+        style="font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-purple); opacity: 0.7; display: block; margin-bottom: 10px;">Digital
+        Time Capsule // Est. Secondary School</span>
+      <div class="witty-note"
+        style="border-left: 2px solid var(--warm-gold); color: var(--text-color); font-style: normal;">
+        <strong>To the best thing to come out of 2008:</strong><br><br>
+        I know it's been over a year since we actually ran into each other, but I figured I'd put this together
+        anyway.
+        <br><br>
+        Thinking back to secondary school, those days felt so much simpler, didn't they? Even though we've both
+        graduated and gone our separate ways for now, I still find myself laughing at the weird jokes and the
+        specific brand of chaos we survived back then. You were a huge part of what made those years bearable.
+        <br><br>
+        It's wild how much time has passed, but I wanted you to know that even from a distance, I'm still
+        rooting for you. Congrats on hitting this milestone. You're officially "Version 18.0"—the same person I
+        knew in the hallways, just with a lot more freedom.
+        <br><br>
+        Stay exactly as you are. We've overdue for a catch-up.
+        <br><br>
+        <strong>— Paul</strong>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="section">
+  <div class="section">
     <h2>The Romance Stuff</h2>
-    <p>You laugh at the weirdest things, and somehow that’s exactly why I like you.</p>
+    <p>You laugh at the weirdest things, and somehow that's exactly why I like you.</p>
     <div class="tag-container">
-        <div class="tag">Slow Burn</div>
-        <div class="tag">Enemies to Lovers</div>
-        <div class="tag">Only One Bed</div>
-        <div class="tag">Accidental Soulmates</div>
+      <div class="tag">Slow Burn</div>
+      <div class="tag">Enemies to Lovers</div>
+      <div class="tag">Only One Bed</div>
+      <div class="tag">Accidental Soulmates</div>
     </div>
-</div>
+  </div>
 
-<div class="section" style="text-align: center; opacity: 0.6;">
+  <div class="section" style="text-align: center; opacity: 0.6;">
     <h2>A Danger Zone</h2>
     <p style="font-size: 0.8rem;">I found something you absolutely love. Definitely. 100%.</p>
-    <button style="background: none; font-family: inherit; border: 1px dotted #ff4d4d; color: #ff4d4d; cursor: pointer; font-size: 0.75rem; padding: 0.8rem; border-radius: 5px;" onclick="togglePoop()">DO NOT PRESS</button>
-</div>
+    <button
+      style="background: none; font-family: inherit; border: 1px dotted #ff4d4d; color: #ff4d4d; cursor: pointer; font-size: 0.75rem; padding: 0.8rem; border-radius: 5px;"
+      onclick="togglePoop()">DO NOT PRESS</button>
+  </div>
 
-<footer>Made for you, just because 💜</footer>
+  <footer>Made for you, just because 💜</footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
