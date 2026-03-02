@@ -18,20 +18,24 @@ function runTypewriter() {
 }
 
 function createParticles() {
-  const count = 30;
+  const count = 25;
   for (let i = 0; i < count; i++) {
     const p = document.createElement('div');
     p.className = 'particle';
-    const size = Math.random() * 15 + 8 + 'px';
+    const size = Math.random() * 25 + 12 + 'px';
+    const colors = ['#f9f0c1', '#cbb2d9', '#e8d5f2'];
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+    p.style.opacity = (Math.random() * 0.3 + 0.1);
+
     p.style.width = size;
     p.style.height = size;
     p.style.top = Math.random() * 100 + 'vh';
     p.style.left = Math.random() * 100 + 'vw';
-    p.style.setProperty('--x1', (Math.random() * 200 - 100) + 'px');
+    p.style.setProperty('--x1', (Math.random() * 100 - 50) + 'px');
     p.style.setProperty('--y1', (Math.random() * 200 - 100) + 'px');
     p.style.setProperty('--x2', (Math.random() * 200 - 100) + 'px');
     p.style.setProperty('--y2', (Math.random() * 200 - 100) + 'px');
-    p.style.setProperty('--t', (Math.random() * 15 + 15) + 's');
+    p.style.setProperty('--t', (Math.random() * 20 + 25) + 's');
     document.body.appendChild(p);
   }
 }
