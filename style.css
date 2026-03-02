@@ -22,16 +22,12 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Animation Styles --- */
-
 .particle {
   position: fixed;
   border-radius: 50%;
-  background: var(--warm-gold);
-  opacity: 0.5;
   pointer-events: none;
   z-index: -1;
-  filter: blur(8px);
+  filter: blur(4px) drop-shadow(0 0 8px rgba(249, 240, 193, 0.6));
   animation: float-around var(--t) infinite ease-in-out;
 }
 
@@ -80,8 +76,6 @@ body {
   transform: translateY(0);
   filter: blur(0);
 }
-
-/* --- Layout Styles --- */
 
 header {
   height: 100vh;
