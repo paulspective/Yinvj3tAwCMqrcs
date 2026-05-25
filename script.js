@@ -89,3 +89,24 @@ function checkPasscode() {
     document.getElementById('passcode').value = '';
   }
 }
+
+const music = document.getElementById('bg-music');
+const progressBar = document.getElementById('progress-bar');
+
+let isPlaying = false;
+
+function toggleMusic() {
+  if (!isPlaying) {
+    music.play();
+    isPlaying = true;
+  } else {
+    music.pause();
+    isPlaying = false;
+  }
+}
+
+music.addEventListener('timeupdate', () => {
+  if (!music.duration) return;
+  const percent = (music.currentTime / music.duration) * 100;
+  progressBar.style.width = percent + '%';
+});
