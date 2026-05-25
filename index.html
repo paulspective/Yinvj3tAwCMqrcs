@@ -20,13 +20,18 @@
 
   <div class="section">
     <h2>The Soundtrack</h2>
-    <p class="witty-note">"I heard you shared 'The Night We Met' once. Perfect for when you lie in bed and stare at
-      the ceiling"</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/AKnC-W-JPJk?rel=0&modestbranding=1&autoplay=0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-        loading="lazy">
-      </iframe>
+    <div class="music-player">
+  <p class="witty-note">“You shared 'The Night We Met' once…”</p>
+
+  <audio id="bg-music" preload="auto">
+    <source src="music/Lord Huron The Night We Met.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="btn-premium" onclick="toggleMusic()">Play / Pause</button>
+
+  <div class="progress">
+    <div id="progress-bar"></div>
+  </div>
     </div>
   </div>
 
